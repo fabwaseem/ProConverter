@@ -8,7 +8,9 @@
 body {
   font-family: roboto, sans-serif;
   width: 100%;
-  height: 100vh;
+  min-height:100vh;
+  overflow-x: hidden;
+
 }
 
 nav {
@@ -19,6 +21,12 @@ nav {
 nav .wrapper {
   width: 50%;
   margin: auto;
+}
+.navbar{
+  height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav ul {
   list-style: none;
@@ -40,13 +48,20 @@ nav ul li a {
 nav ul li:nth-child(3) a {
   font-size: 60px;
 }
+.logo{
+  display: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
 nav ul li a.active,
 nav ul li:not(:nth-child(3)) a:hover {
   background: #fc862c;
 }
 .container {
   width: 100%;
-  height: 85%;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +71,7 @@ nav ul li:not(:nth-child(3)) a:hover {
   height: 705px;
   text-align: center;
   border-radius: 50px;
+  min-width: 400px;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.075);
 }
 .container .heading {
@@ -198,4 +214,46 @@ select {
 }
 .container .input.age #inam{
   right: 120px;
+}
+
+
+
+@media (max-width:1200px){
+  .navbar ul{
+    gap: 20px;
+  }
+  .navbar ul li a{
+    font-size: 20px;
+   }
+   nav ul li:nth-child(3) a {
+    font-size: 45px;
+  }
+}
+
+@media (max-width:900px){
+  .navbar ul{
+    display: none;
+  }
+  .logo{
+    display:block;
+  }
+}
+@media (max-width:600px){
+  .container .wrapper{
+      width: 300px;
+  }
+  .container .heading{
+    font-size:30px;
+  }
+  .btn {
+    transform:translateX(70px)
+  }
+  .logo{
+   font-size:40px;
+  }
+}
+@media (max-width:450px){
+  .container .wrapper{
+    box-shadow: none;
+  }
 }
