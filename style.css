@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: roboto, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 127px;
+  background: linear-gradient(to right, #5e58ff, #ff3434);
+}
+nav .wrapper {
+  width: 50%;
+  margin: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  height: 127px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 29px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+nav ul li:nth-child(3) a {
+  font-size: 60px;
+}
+nav ul li a.active,
+nav ul li:not(:nth-child(3)) a:hover {
+  background: #fc862c;
+}
+.container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper {
+  width: 544px;
+  height: 705px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.075);
+}
+.container .heading {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 50px;
+  color: #002f9b;
+  margin-bottom: 70px;
+}
+.container .input {
+  position: relative;
+}
+.container input,
+.container select {
+  width: 80%;
+  height: 80px;
+  outline: none;
+  border: none;
+  background: rgb(243, 243, 243);
+  border-radius: 50px;
+  margin-bottom: 25px;
+  padding: 30px;
+  font-size: 20px;
+  position: relative;
+}
+.container select {
+  padding-right: 100px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.container label {
+  font-size: 24px;
+  color: #002f9b;
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+  margin-left: 80px;
+}
+.container .inam {
+  position: absolute;
+  top: 60px;
+  right: 90px;
+  font-size: 20px;
+  right: 90px;
+  display: none;
+  pointer-events: none;
+}
+.container #inam2{
+  top: 200px;
+  right: 120px;
+} 
+.btn {
+  padding: 15px 40px;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  transform: translateX(120px);
+  background: linear-gradient(to right, #5e58ff, #ff3434);
+}
+.container .con {
+  position: relative;
+}
+.container .fas {
+  position: absolute;
+  top: 60px;
+  right: 90px;
+  font-size: 30px;
+  border-radius: 50px;
+  pointer-events: none;
+  transition: transform 0.3s;
+  background: rgb(243, 243, 243);
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.output p {
+  font-size: 24px;
+  color: #002f9b;
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.output span {
+  color: #fff;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #5e58ff, #ff3434);
+}
+.output h1 {
+  text-align: left;
+  font-size: 36px;
+  margin-left: 100px;
+  color: #002f9b;
+  margin-bottom: 80px;
+}
+.output.age h1{
+  margin-left: 0px;
+  display: inline-block;
+  margin-bottom:10px;
+}
+.output.age span{
+  display:block;
+  width: 50%;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.output.age{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.output.age p{
+  margin-bottom:20px;
+}
+.input.hide {
+  display: none;
+}
+.output.show {
+  display: none;
+}
+.back-btn {
+  margin-top: 25px;
+}
+
+.image{
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 150px;
+  pointer-events: none;
+}
+.container .input.age #inam{
+  right: 120px;
+}
