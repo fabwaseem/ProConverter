@@ -13,4 +13,5 @@ const navbar = document.querySelector(".navbar ul");
 
 hamBtn.addEventListener("click", () => {
     navbar.classList.toggle("active");
+    document.body.classList.toggle("overhide");
 })

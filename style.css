@@ -78,6 +78,12 @@ i.ham-btn {
   border-radius: 50px;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.075);
 }
+.container.units {
+  height: 900px;
+}
+.units .wrapper {
+  height: 850px;
+}
 .container .heading {
   font-size: 36px;
   font-weight: 500;
@@ -132,6 +138,7 @@ select {
   right: 120px;
 }
 .btn {
+  cursor: pointer;
   padding: 15px 40px;
   font-size: 25px;
   color: #fff;
@@ -221,7 +228,18 @@ select {
 .container .input.age #inam {
   right: 120px;
 }
-
+.calculator .btn {
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  transform: translateX(0px);
+}
+.calculator .line-4 {
+  margin-bottom: 0px;
+}
+.calculator .btn:not(.last) {
+  margin-right: 30px;
+}
 @media (max-width: 1200px) {
   .navbar ul {
     gap: 20px;
@@ -237,36 +255,39 @@ select {
 @media (max-width: 900px) {
   .navbar ul {
     display: none;
-    position:absolute;
+    position: absolute;
     top: 0;
-    left:0;
-    flex-direction:column;
+    left: 0;
+    flex-direction: column;
     background: linear-gradient(to right, #5e58ff, #ff3434);
-    height:100vh;
+    height: 100vh;
     width: 100vw;
     z-index: 1;
   }
-  .navbar ul.active{
-    display:flex;
+  .navbar ul.active {
+    display: flex;
   }
   .navbar ul li {
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
   .navbar ul li a {
     font-size: 40px;
   }
-  nav ul li:nth-child(3){
-      font-size:60px;
+  nav ul li:nth-child(3) {
+    font-size: 60px;
   }
   .logo {
     display: block;
   }
-  i.ham-btn{
+  i.ham-btn {
     display: block;
   }
-  .navbar{
-    justify-content: space-between; 
+  .navbar {
+    justify-content: space-between;
     padding: 0 70px;
+  }
+  .overhide{
+    overflow: hidden;
   }
 }
 @media (max-width: 600px) {
@@ -284,7 +305,12 @@ select {
   .container .wrapper {
     box-shadow: none;
   }
-  .navbar{
+  .navbar {
     padding: 0 20px;
+  }
+  .calculator .btn{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
   }
 }
